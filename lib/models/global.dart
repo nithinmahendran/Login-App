@@ -15,3 +15,6 @@ TextStyle buttonText = const TextStyle(
   color: Colors.white,
   fontWeight: FontWeight.w400
 );
+
+TextStyle successTitle = const TextStyle(
+    fontSize: 45.0, color: Colors.white, fontWeight: FontWeight.w600);
