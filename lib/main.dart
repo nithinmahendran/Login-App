@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:loginapp/login%20page/UI/register.dart';
 
+import 'login page/UI/login.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,6 +17,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Poppins"),
-        home: const RegisterPage());
+        home: const LoginPage());
   }
 }
