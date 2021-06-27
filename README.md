@@ -7,7 +7,7 @@ A Flutter app built to authenticate a user and produce appropriate screen on inp
 
 | Login Screen | SignUp Screen | Desired Page |
 |------------|-------------|------------|
-| <img src="/assets/screenshots/login.png" width=300 height=600> | <img src="/assets/screenshots/signup.png" width=300 height=600> | <img src="/assets/screenshots/success.png" width=300 height=600> |
+| <img src="/assets/screenshots/login.png" width=200 height=400> | <img src="/assets/screenshots/signup.png" width=200 height=400> | <img src="/assets/screenshots/success.png" width=200 height=400> |
 
 ## Lottie Files
 
