@@ -18,3 +18,9 @@ TextStyle buttonText = const TextStyle(
 
 TextStyle successTitle = const TextStyle(
     fontSize: 45.0, color: Colors.white, fontWeight: FontWeight.w600);
+
+TextStyle whiteButtonText = const TextStyle(
+  fontSize: 18.0,
+  color: Colors.black,
+  fontWeight: FontWeight.w400
+);

@@ -1,23 +1,39 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:loginapp/login%20page/UI/register.dart';
+import 'package:loginapp/UI/register.dart';
+import 'UI/login.dart';
+import 'UI/success.dart';
+import 'package:provider/provider.dart';
+import 'package:loginapp/models/authentication.dart';
+void main() async {
+  // Directory appDocumentDir;
+  //appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
 
-import 'login page/UI/login.dart';
-import 'login page/UI/success.dart';
-
-void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Poppins"),
-        home: const SuccessPage());
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(value: Authentication() )
+      ],
+          child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Login App',
+          theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Poppins"),
+          home: LoginPage()),
+    );
+   
   }
+
+ 
 }
